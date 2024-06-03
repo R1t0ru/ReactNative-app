@@ -5,7 +5,7 @@ const colorA = '#c36878';
 
 export default function TabLayout() {
   return (
-    <Tabs>
+    <Tabs screenOptions={{headerStyle:{backgroundColor:colorA}}}>
       <Tabs.Screen name="index" options={{ title: "Home", tabBarIcon:({ size})=>(
         <MaterialCommunityIcons name="home" color={colorA} size={size}/>
       )
