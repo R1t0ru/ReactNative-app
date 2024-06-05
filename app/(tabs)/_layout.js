@@ -1,7 +1,7 @@
 import { Tabs } from "expo-router";
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
-const colorA = '#c36878';
+export const colorA = '#c36878';
 
 export default function TabLayout() {
   return (
@@ -10,10 +10,13 @@ export default function TabLayout() {
         <MaterialCommunityIcons name="home" color={colorA} size={size}/>
       )
       }} />
+      <Tabs.Screen name="forms" options={{ title: "Formulaire" , tabBarIcon:({ size})=>(
+        <MaterialCommunityIcons name="form-select" color={colorA} size={size}/>
+      )}} />
       <Tabs.Screen name="donation" options={{title: "Donations", tabBarIcon:({ size})=>(
         <MaterialCommunityIcons name="hand-coin" color={colorA} size={size}/>
       )}} />
-      <Tabs.Screen name="info1" options={{title: "Inforamtions", tabBarIcon:({ size})=>(
+      <Tabs.Screen name="info1" options={{title: "Informations", tabBarIcon:({ size})=>(
         <MaterialCommunityIcons name="information" color={colorA} size={size}/>
       )}} />
             <Tabs.Screen name="mention" options={{ title: "Mention Légales" , tabBarIcon:({ size})=>(
